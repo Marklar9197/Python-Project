@@ -13,7 +13,7 @@ random_num = random.randint(1,10)
 print(random_num)
 
 print("I'm thinking of a number between 1 and 10")
-user_guess = input("What is my number? > ")
+user_guess = int(input("What is my number? > "))
 
 if user_guess < random_num:
 	print("Please try a larger number")
