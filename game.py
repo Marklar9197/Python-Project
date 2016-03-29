@@ -21,11 +21,12 @@ def greeting():
 
 def user_choice():
 	if guess < random_num:
-	int(input("Please try a larger number > "))
-	return 
+		large_num = int(input("Please try a larger number > "))
+		user_choice 
 
 elif guess > random_num:
-	int(input("Please try a smaller number > "))
+		small_num= int(input("Please try a smaller number > "))
+		user_choice
 
 elif guess == random_num:
 	print "You got it!"
