@@ -9,31 +9,34 @@ random_num = random.randint(1,10)
 print(random_num) # Being used for testing purposes
 
 
+guess = int(input("What is my number? > "))
+
 def greeting():
 	print("I'm thinking of a number between 1 and 10")
-user_guess = int(input("What is my number? > "))
+	print(guess)
+	user_choice()
+
 
 
 
 def user_choice():
-	if user_guess < random_num:
+	if guess < random_num:
 	int(input("Please try a larger number > "))
 	return 
 
-elif user_guess > random_num:
+elif guess > random_num:
 	int(input("Please try a smaller number > "))
 
-elif user_guess == random_num:
+elif guess == random_num:
 	print "You got it!"
-	replay()
+	play_again()
 
 
 
-def replay():
+def play_again():
 	replay = input("Would you like to play again? > ")
-
 if replay == 'yes'.lower():
-	number_choice()
+	greeting()
 
 
 
