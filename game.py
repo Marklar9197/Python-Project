@@ -10,6 +10,10 @@ print(random_num) # Being used for testing purposes
 
 
 guess = int(input("What is my number? > "))
+small_num = int(input('Lower > '))
+large_num = int(input('Higher > '))
+replay = input("Would you like to play again? > ")
+
 
 def greeting():
 	print("I'm thinking of a number between 1 and 10")
@@ -20,12 +24,12 @@ def greeting():
 
 
 def user_choice():
-	if guess < random_num:
-		large_num = int(input("Please try a larger number > "))
+if guess < random_num:
+		print(large_num)
 		user_choice 
 
 elif guess > random_num:
-		small_num= int(input("Please try a smaller number > "))
+		print(small_num)
 		user_choice
 
 elif guess == random_num:
@@ -35,7 +39,7 @@ elif guess == random_num:
 
 
 def play_again():
-	replay = input("Would you like to play again? > ")
+	print(replay)
 if replay == 'yes'.lower():
 	greeting()
 
